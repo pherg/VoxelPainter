@@ -14,9 +14,12 @@ public class Core : MonoBehaviour {
         get { return initialized; }
     }
 
+    public ViveWand leftWand;
+    public ViveWand rightWand;
+
     void Awake()
     {
-        instance = this;
+        Core.instance = this;
     }
 
     void Start()
